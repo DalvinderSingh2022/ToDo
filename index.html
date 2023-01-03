@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h3 class="top">TO DO LIST</h3>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Please enter a task....">
+                <button>ADD</button>
+            </div>
+        </form>
+
+        <ul class="nav">
+            <li class="active" data-type="all">
+                <a href="#">All Tasks</a>
+            </li>
+            <li data-type="todo">
+                <a href="#">To Do Tasks</a>
+            </li>
+            <li data-type="done">
+                <a href="#">Completed Tasks</a>
+            </li>
+        </ul>
+
+        <ul id="taskList"></ul>
+
+        <div id="message" class="hide"></div>
+
+        <input type="hidden" id="objIndex" value="">
+        <input type="hidden" id="tabValue" value="all">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
